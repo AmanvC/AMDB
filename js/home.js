@@ -23,10 +23,6 @@ async function getMovie(movieName){
 
     if(!data.Error){
 
-        // let hyperlink = document.createElement('a');
-        // hyperlink.href = './movie.html';
-        // movieContainer.appendChild(hyperlink);
-
         let card = document.createElement("div");
         card.classList.add('card');
         movieContainer.appendChild(card);
