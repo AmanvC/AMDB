@@ -2,7 +2,7 @@
 
     setTimeout(() => {
         document.getElementById('loading-wrapper').remove();
-    }, 2000)
+    }, 1000)
 
     document.querySelector('#navigation').addEventListener('click', () => {
         window.close();
