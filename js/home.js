@@ -4,7 +4,7 @@ var favArray = [];
 let moviess = localStorage.getItem('favourites');
 
 document.getElementById('favourites').addEventListener('click', () => {
-    const win = window.open('./fav.html', '_blank');
+    const win = window.open('./html/fav.html', '_blank');
     win.focus();
 })
 
@@ -113,7 +113,7 @@ async function getMovie(movieName){
 
         card.addEventListener('click', () => {
             localStorage.setItem('movieDetails', data.imdbID);
-            const win = window.open('./movie.html', '_blank');
+            const win = window.open('./html/movie.html', '_blank');
             win.focus();
         })
     }
