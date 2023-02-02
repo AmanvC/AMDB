@@ -2,7 +2,12 @@ const url = 'https://www.omdbapi.com/?apikey=819f9886';
 let movieName = '';
 var favArray = [];
 let moviess = localStorage.getItem('favourites');
-console.log(moviess);
+
+document.getElementById('favourites').addEventListener('click', () => {
+    const win = window.open('./fav.html', '_blank');
+    win.focus();
+})
+
 if(!moviess){
     console.log('inside')
     localStorage.setItem('favourites', JSON.stringify(favArray));
